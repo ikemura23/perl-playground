@@ -63,3 +63,10 @@ if ($some_condition) {
 }
 print $x;
 # print $y; # ifのスコープ外なのでエラーとなる
+
+# サブルーチン
+sub logger {
+    my $logmessage = shift;
+    print "$logmessage\n";
+}
+logger("便利");
