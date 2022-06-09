@@ -1,0 +1,22 @@
+=head2 Thu Jun  9 11:52:16 2022: C<Module> L<Path::Tiny|Path::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: /Users/k_ikemura/dev/perl_playground/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.122>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
