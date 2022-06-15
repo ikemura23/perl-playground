@@ -7,6 +7,10 @@ perlで遊んでみる
 The Perl Programming Language - www.perl.org  
 https://www.perl.org/
 
+# 日本語参考サイト
+
+https://perldoc.jp/
+
 ## Perlについて
 - 1987年リリースされた古い言語
 - もともとはテキスト操作用に開発された汎用プログラミング言語
