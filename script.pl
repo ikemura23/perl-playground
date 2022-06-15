@@ -99,3 +99,26 @@ unless ($int_condition) {
 logger("yow!") if $str_true_condition;
 logger("we have no bananas") unless $str_false_condition;
 
+# while
+while ( $str_false_condition ) {
+    logger("while start")
+}
+
+# whileの逆バージョン
+until ($str_true_condition) {
+    logger("until start")
+}
+
+# for
+for (my $i = 0; $i <= 5; $i++) {
+    logger("for $i")
+}
+
+# foreach
+foreach(@animals) {
+    logger("element is $_") # $_ でループの値を取得できる
+}
+
+foreach my $key (keys %fruit_color) {
+    logger("key: $key, value: $fruit_color{$key}") # $_ でループの値を取得できる
+}
