@@ -70,3 +70,32 @@ sub logger {
     print "$logmessage\n";
 }
 logger("便利");
+
+# ループ
+# https://perldoc.perl.org/perlintro#Conditional-and-looping-constructs
+
+# perlは数値の場合は0だけがfalse、0以外はtrueとなる
+my $int_condition = 1;
+
+if ($int_condition) {
+    logger("true")
+} elsif (!$int_condition) {
+    logger("elsif")
+}
+else {
+    logger("else")
+}
+
+# 文字列の場合は空文字 '' 、または'0'がfalse、それ以外はtrue（シングルクォーテーションもダブルクォーテーションも同じ）
+my $str_true_condition = 'true';
+my $str_false_condition = '';
+
+# unlessもある
+unless ($int_condition) {
+     logger("int_condition")
+}
+
+# 1行の条件付きブロック
+logger("yow!") if $str_true_condition;
+logger("we have no bananas") unless $str_false_condition;
+
