@@ -122,3 +122,14 @@ foreach(@animals) {
 foreach my $key (keys %fruit_color) {
     logger("key: $key, value: $fruit_color{$key}") # $_ でループの値を取得できる
 }
+
+
+# ファイルとI/O
+
+open(my $in, "<", "./README.md") or die "Can't open README.md: $!";
+
+while (<$in>) {
+    print "$_"
+}
+
+close $in or die "$in: $!";
